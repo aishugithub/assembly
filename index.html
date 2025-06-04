@@ -8,10 +8,13 @@
       background-color: #f0f4f8;
       text-align: center;
       padding-top: 100px;
+      margin: 0;
     }
+
     h1 {
       color: #2c3e50;
     }
+
     button {
       font-size: 20px;
       padding: 12px 24px;
@@ -21,22 +24,56 @@
       border-radius: 6px;
       cursor: pointer;
     }
+
     button:hover {
       background-color: #1c6cd1;
+    }
+
+    /* Top-right logo */
+    #logo {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      width: 100px;
+      height: auto;
+      z-index: 100;
+    }
+
+    /* Footer styling */
+    footer {
+      position: fixed;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+
+    #club-logo {
+      height: 30px;
+      vertical-align: middle;
+      margin-left: 8px;
     }
   </style>
 </head>
 <body>
-  <h1>Chinmaya Vidyalaya Senior Secondary School</h1>
-  <br>
-  <h2>Virugambakkam</h2>
+  <!-- Top-right School Logo -->
+  <img id="logo" src="school-logo.png" alt="School Logo" />
+
+  <h1>Welcome to the Live School Assembly</h1>
   <p>Click below to join the live video from the auditorium.</p>
-  <button onclick="joinAssembly()">Join Live Assembly</button>
+  <button onclick="joinAssembly()">Join Assembly</button>
+
+  <!-- Footer -->
+  <footer>
+    Powered by Chinmaya Computing Club
+    <img id="club-logo" src="club-logo.png" alt="Chinmaya Computing Club Logo" />
+  </footer>
 
   <script>
     function joinAssembly() {
-      // Replace this with your actual Google Meet link
-      window.location.href = "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGFjMjJkNmItOGQzYS00MjQxLWJiMWYtZWJlOTIxYTcxMDky%40thread.v2/0?context=%7b%22Tid%22%3a%22807ac3f6-0c6d-4037-b35b-70d011d3a52b%22%2c%22Oid%22%3a%228543d1b0-d50a-43bf-b6df-9ccad6272ec6%22%7d";
+      window.location.href = "https://teams.microsoft.com/l/meetup-join/...";
     }
   </script>
 </body>
