@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>CVV Live Assmbly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CVV Live Assembly</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,10 +14,23 @@
 
     h1 {
       color: #2c3e50;
+      font-size: 24px;
+      margin: 0 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 0 20px 20px;
     }
 
     button {
-      font-size: 20px;
+      font-size: 18px;
       padding: 12px 24px;
       background-color: #2c89e8;
       color: white;
@@ -32,9 +46,9 @@
     /* Top-right logo */
     #logo {
       position: fixed;
-      top: 20px;
-      right: 150px;
-      width: 100px;
+      top: 10px;
+      right: 10px;
+      width: 80px;
       height: auto;
       z-index: 100;
     }
@@ -46,14 +60,47 @@
       left: 0;
       right: 0;
       text-align: center;
-      font-size: 20px;
+      font-size: 16px;
       color: #555;
+      padding: 0 10px;
     }
 
     #club-logo {
-      height: 60px;
+      height: 40px;
       vertical-align: middle;
       margin-left: 8px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      body {
+        padding-top: 80px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      button {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+
+      #logo {
+        width: 60px;
+      }
+
+      #club-logo {
+        height: 30px;
+      }
+
+      footer {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
